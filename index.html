@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ross Burns — Data & ML Developer</title>
+  <meta name="description" content="Data & ML developer portfolio. Projects in sports analytics, personal finance, and more.">
+  <script>
+    (function(){
+      try{
+        var key="pref-theme";
+        var saved=localStorage.getItem(key);
+        if(saved){ document.documentElement.setAttribute("data-theme",saved); }
+      }catch(e){}
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Ross Burns</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#profile">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <button id="theme-toggle" class="theme-toggle fab" aria-label="Toggle dark mode">🌓</button>
+  </nav>
+
+  <main>
+    <section id="profile" class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/profile.jpg" alt="Profile picture" class="profile-pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ross Burns</h1>
+        <p class="section__text__p2">Data & ML Developer • Physics</p>
+
+        <div class="btn-container">
+          <button class="btn btn-soft btn-hero" onclick="location.href='./assets/Ross_Burns_CV.pdf'">Download CV</button>
+          <button class="btn btn-color-2 btn-hero" onclick="location.href='#contact'">Contact</button>
+        </div>
+
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/your-link/'" />
+          <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/your-handle'" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-container">
+      <p class="section__text__p1">A bit about me</p>
+      <h1 class="title">About</h1>
+
+      <div class="experience-details-container">
+        <div class="about-grid">
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title">Who I Am</h2>
+            <p class="about-text">
+              Swimmer-turned-physicist building practical data tools. I like turning raw time-series and text into clear dashboards and APIs.
+              Current stack: Python (pandas, FastAPI), SQL, and lightweight front-ends.
+            </p>
+          </div>
+
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title">Highlights</h2>
+            <ul class="about-list">
+              <li>Top of year in Physics (Court Medal)</li>
+              <li>Coaches swimming; builds lean MVPs fast</li>
+              <li>Focus: data apps that ship and get used</li>
+            </ul>
+          </div>
+
+          <div class="details-container color-container about-wide">
+            <h2 class="experience-sub-title">Technologies</h2>
+            <p class="about-tech-line">
+              Python · pandas · NumPy · scikit-learn · FastAPI · SQL · Postgres/SQLite · Plotly · Matplotlib · Streamlit · Git · Docker (basics) · Power BI · Excel
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-container">
+      <p class="section__text__p1">Browse My Work</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/swimsmart-thumb.png" alt="SwimSmart Tracker" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">SwimSmart Tracker</h2>
+            <p class="project-blurb">Time-series logging for swim sets with pace & RPE trends and CSV export.</p>
+            <div class="btn-row">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/your-handle/swimsmart'">GitHub</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://example.com'">Demo</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/mini-projects-thumb.png" alt="Mini Projects" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Mini Projects</h2>
+            <p class="project-blurb">A repo of small data/ML experiments and utilities.</p>
+            <div class="btn-row">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/your-handle/mini-projects'">GitHub</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/your-handle/mini-projects#readme'">Readme</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/baseball-thumb.png" alt="Baseball DB" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Baseball DB (Coming Soon)</h2>
+            <p class="project-blurb">Japanese baseball performance database & analytics tool.</p>
+            <div class="btn-row">
+              <button class="btn btn-color-2 project-btn" onclick="alert('Baseball DB is coming soon!')">Overview</button>
+              <button class="btn btn-color-2 project-btn" onclick="alert('Repo coming soon!')">Repo</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/solar-thumb.png" alt="SOLAR" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">SOLAR (Coming Soon)</h2>
+            <p class="project-blurb">Solar-panel performance predictor & dashboard.</p>
+            <div class="btn-row">
+              <button class="btn btn-color-2 project-btn" onclick="alert('SOLAR is coming soon!')">Overview</button>
+              <button class="btn btn-color-2 project-btn" onclick="alert('Repo coming soon!')">Repo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-container">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container" style="padding: 1rem 1.25rem;">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="width:100%;max-width:720px;margin:auto;">
+          <input type="hidden" name="form-name" value="contact" />
+          <p style="display:none;"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:0.75rem;">
+            <label style="flex:1; min-width:240px;">Name
+              <input type="text" name="name" required class="input" />
+            </label>
+            <label style="flex:1; min-width:240px;">Email
+              <input type="email" name="email" required class="input" />
+            </label>
+          </div>
+
+          <label>Message
+            <textarea name="message" rows="6" required class="textarea"></textarea>
+          </label>
+
+          <div class="btn-container" style="margin-top:1rem;">
+            <button class="btn btn-color-1" type="submit">Send</button>
+            <button class="btn btn-color-2" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Ross Burns</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
