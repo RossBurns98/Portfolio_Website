@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thanks — Message Received</title>
+  <meta name="description" content="Thanks for your message — I’ll get back to you shortly." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .thanks-wrap {
+      max-width: 720px;
+      margin: 8rem auto;
+      padding: 2rem;
+      background: var(--card);
+      border: 0.1rem solid var(--border);
+      border-radius: 1rem;
+      text-align: center;
+    }
+    .thanks-wrap h1 {
+      margin: 0 0 .5rem;
+    }
+    .thanks-wrap p {
+      margin: 0 0 1.25rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <nav id="desktop-nav">
+    <ul class="nav-links">
+      <li><a href="index.html#profile">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-toggle fab" aria-label="Toggle dark mode">🌓</button>
+  </nav>
+
+  <main>
+    <div class="thanks-wrap">
+      <h1 class="title">Thanks!</h1>
+      <p>Your message has been sent — I’ll get back to you soon.</p>
+      <div class="btn-container">
+        <a class="btn btn-color-1" href="index.html">Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Ross Burns</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

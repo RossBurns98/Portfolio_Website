@@ -18,28 +18,27 @@
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
+  <!-- NAV -->
   <nav id="desktop-nav">
-    <div class="logo">Ross Burns</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#profile">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    <ul class="nav-links">
+      <li><a href="#profile">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
     <button id="theme-toggle" class="theme-toggle fab" aria-label="Toggle dark mode">🌓</button>
   </nav>
 
   <main>
+    <!-- HERO -->
     <section id="profile" class="section-container">
       <div class="section__pic-container">
-        <img src="./assets/profile.jpg" alt="Profile picture" class="profile-pic" />
+        <img src="./assets/pfp.jpg" alt="Profile picture" class="profile-pic" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Ross Burns</h1>
-        <p class="section__text__p2">Data & ML Developer • Physics</p>
+        <p class="section__text__p2">Data Enjoyer • Physics Student</p>
 
         <div class="btn-container">
           <button class="btn btn-soft btn-hero" onclick="location.href='./assets/Ross_Burns_CV.pdf'">Download CV</button>
@@ -47,12 +46,20 @@
         </div>
 
         <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/your-link/'" />
-          <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/your-handle'" />
+          <a href="https://www.linkedin.com/in/rossburns98/"
+             target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+          </a>
+
+          <a href="https://github.com/RossBurns98"
+             target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img src="./assets/github.png" alt="GitHub" class="icon" />
+          </a>
         </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="section-container">
       <p class="section__text__p1">A bit about me</p>
       <h1 class="title">About</h1>
@@ -62,78 +69,84 @@
           <div class="details-container color-container">
             <h2 class="experience-sub-title">Who I Am</h2>
             <p class="about-text">
-              Swimmer-turned-physicist building practical data tools. I like turning raw time-series and text into clear dashboards and APIs.
-              Current stack: Python (pandas, FastAPI), SQL, and lightweight front-ends.
+              Hi, I’m Ross, a Physics student at UWS graduating in May 2026. I like exploring the theory behind how things work and using data and code to make sense of systems I’d normally not understand. I’m curious by nature, drawn to structure and logic, and I enjoy the challenge of finding clarity in detail. When I’m not studying or building, I’m probably coaching at the pool or doodling across my whiteboard.
             </p>
           </div>
 
           <div class="details-container color-container">
             <h2 class="experience-sub-title">Highlights</h2>
             <ul class="about-list">
-              <li>Top of year in Physics (Court Medal)</li>
-              <li>Coaches swimming; builds lean MVPs fast</li>
-              <li>Focus: data apps that ship and get used</li>
+              <li>2× Court Medal, top of cohort in both first and second year of Physics.</li>
+              <li>Also hold a BSc in Sports & Exercise Science, blending analytical thinking with performance insight.</li>
+              <li>20+ years in swimming, coach and former elite athlete at national and Commonwealth trials.</li>
+              <li>6 years as a lifeguard, developed calm decision-making, teamwork, and communication.</li>
             </ul>
           </div>
 
           <div class="details-container color-container about-wide">
             <h2 class="experience-sub-title">Technologies</h2>
             <p class="about-tech-line">
-              Python · pandas · NumPy · scikit-learn · FastAPI · SQL · Postgres/SQLite · Plotly · Matplotlib · Streamlit · Git · Docker (basics) · Power BI · Excel
+              Python · pandas · NumPy · scikit-learn · FastAPI · SQL · Postgres/SQLite · Plotly · Matplotlib ·
+              Streamlit · Git · Docker (basics) · Power BI · Excel
             </p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="section-container">
       <p class="section__text__p1">Browse My Work</p>
       <h1 class="title">Projects</h1>
 
       <div class="experience-details-container">
         <div class="about-containers">
+          <!-- SwimSmart -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/swimsmart-thumb.png" alt="SwimSmart Tracker" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">SwimSmart Tracker</h2>
-            <p class="project-blurb">Time-series logging for swim sets with pace & RPE trends and CSV export.</p>
+            <p class="project-blurb">Performance logging and analytics for swimmers/coaches — pace, RPE, trend visuals, CSV export.</p>
             <div class="btn-row">
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/your-handle/swimsmart'">GitHub</button>
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://example.com'">Demo</button>
             </div>
           </div>
 
+          <!-- Mini Projects -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/mini-projects-thumb.png" alt="Mini Projects" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Mini Projects</h2>
-            <p class="project-blurb">A repo of small data/ML experiments and utilities.</p>
+            <h2 class="experience-sub-title project-title">Mini Project Folder</h2>
+            <p class="project-blurb">A collection of small experiments, utilities, and quick builds.</p>
             <div class="btn-row">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/your-handle/mini-projects'">GitHub</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/your-handle/mini-projects#readme'">Readme</button>
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/RossBurns98/Mini_Projects','_blank')">GitHub</button>
+              <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/RossBurns98/Mini_Projects/blob/main/README.md','_blank')">Readme</button>
             </div>
           </div>
 
+          <!-- Baseball DB (Coming Soon) -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/baseball-thumb.png" alt="Baseball DB" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">Baseball DB (Coming Soon)</h2>
-            <p class="project-blurb">Japanese baseball performance database & analytics tool.</p>
+            <p class="project-blurb">Japanese baseball performance database and analytics tool.</p>
             <div class="btn-row">
               <button class="btn btn-color-2 project-btn" onclick="alert('Baseball DB is coming soon!')">Overview</button>
               <button class="btn btn-color-2 project-btn" onclick="alert('Repo coming soon!')">Repo</button>
             </div>
           </div>
 
+          <!-- SOLAR (Coming Soon) -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/solar-thumb.png" alt="SOLAR" class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">SOLAR (Coming Soon)</h2>
-            <p class="project-blurb">Solar-panel performance predictor & dashboard.</p>
+            <p class="project-blurb">Solar-panel performance predictor and dashboard.</p>
             <div class="btn-row">
               <button class="btn btn-color-2 project-btn" onclick="alert('SOLAR is coming soon!')">Overview</button>
               <button class="btn btn-color-2 project-btn" onclick="alert('Repo coming soon!')">Repo</button>
@@ -143,14 +156,25 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="section-container">
       <p class="section__text__p1">Get In Touch</p>
       <h1 class="title">Contact Me</h1>
 
       <div class="contact-info-upper-container" style="padding: 1rem 1.25rem;">
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="width:100%;max-width:720px;margin:auto;">
-          <input type="hidden" name="form-name" value="contact" />
-          <p style="display:none;"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+        <!-- Sends messages straight to your email via FormSubmit -->
+        <form action="https://formsubmit.co/rossburns98@live.co.uk"
+              method="POST"
+              style="width:100%;max-width:720px;margin:auto;">
+          <!-- Options -->
+          <input type="hidden" name="_subject" value="New message from Ross Burns portfolio" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_autoresponse" value="Thanks for reaching out — I’ll get back to you shortly." />
+          <!-- Redirect to thank-you page -->
+          <input type="hidden" name="_next" value="./thanks.html" />
+          <!-- Honeypot -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
           <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:0.75rem;">
             <label style="flex:1; min-width:240px;">Name
@@ -170,6 +194,13 @@
             <button class="btn btn-color-2" type="reset">Reset</button>
           </div>
         </form>
+
+        <noscript>
+          <p style="margin-top:1rem;color:var(--muted);">
+            JavaScript is disabled. You can email me directly at
+            <a href="mailto:rossburns98@live.co.uk">rossburns98@live.co.uk</a>.
+          </p>
+        </noscript>
       </div>
     </section>
   </main>
